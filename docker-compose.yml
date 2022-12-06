@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rasa:
+    image: rasa
+    build:
+      context: .
+      dockerfile: ./Dockerfile
