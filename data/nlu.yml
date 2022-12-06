@@ -1,0 +1,54 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Bonjour
+    - nangadef
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - of course
+    - that sounds good
+    - correct
+- intent: direction
+  examples: |
+    - Merci de choisir un [domaine ](domaine)?
+    - [orientation](domaine)
+    - [informations](domaine)
+    - [reconversion](bacs)
+- intent: Type de bacs
+  examples: |
+    - Quel est ton type de [bac](bacs)?
+    - J ai un[ bac L](bacs)
+    - j ai un [bac S](bacs)
+    - [Bac G](bacs)
+    - J ai un[ bac F](bacs)
+    - Mon type de bac est le[ Bac T](bacs)
+    - bac
+    - [Bac S](bacs)

@@ -1,0 +1,19 @@
+version: "2.0"
+stories:
+- story: dirvsgreat
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_direction
+  - intent: direction
+    entities:
+    - direction: orientation
+    - direction: informations
+    - direction: reconversion
+  - action: utter_type_bacs
+  - intent: Type de bacs
+    entities:
+    - bacs: Bac L
+    - bacs: Bac S
+    - bacs: Bac G
+  - action: utter_did_that_help

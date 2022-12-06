@@ -1,0 +1,53 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- Type de bacs:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- direction:
+    use_entities: true
+entities:
+- bacs
+- domaine
+- direction
+slots: {}
+responses:
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye
+  - text: Ba benene
+  - text: Gnou yendou ak diam
+  - text: Ciao
+  utter_iamabot:
+  - text: Je suis un bot, powered by Rasa.
+  utter_greet:
+  - text: Salam,comment vous aider ?
+  - text: nangadef, comment vous aider ?
+  - text: Bonjour,comment vous aider ?
+  utter_direction:
+  - text: Merci de choisir un domaine ?
+  - text: Choisissez une direction ?
+  utter_type_bacs:
+  - text: Quel est votre type de bac ?
+  - text: Quel est votre serie de bac ?
+  - text: Quel bac avez vous  ?
+actions:
+- utter_type_bacs
+- utter_direction
+forms: {}
+e2e_actions: []
