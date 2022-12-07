@@ -1,0 +1,62 @@
+{"intents": [
+  {"tag": "salutations",
+  "patterns": ["bonjour","coucou","salut","comment ça va?","quoi de neuf","ça va?","yo"],
+  "responses": ["Bonjour!","Salut!","Hello!","Salam Aleykum:)"]
+  },
+
+  {"tag": "nom",
+  "patterns": ["comment tu t'appelles?","ton nom?","à qui ai-je l'honneur?","qui es-tu?","comment puis-je t'appeler?","quel est ton nom?", "ton nom stp",
+              "nom"],
+  "responses": ["Je m'appelle Educata","Je suis Educata","Je suis Educata ton guide d'orientation professionnel","Enchanté, appelle moi Educata"]
+  },
+
+  {"tag": "premierchoix_orientation",
+  "patterns": ["je souhaite m'orienter", "je ne sais pas quoi faire, je viens d'avoir mon bac",
+              "je veux une orientation", "propose moi une formation", "orientation", "m'orienter",
+              "oriente-moi vers une formation", "quelle formation me convient?", "que faire apres mon bac?",
+              "que puis-je étudier?", "propose moi une bonne formation"],
+"responses": ["Quel enseignement avez-vous suivi? Général ou Franco-Arabe", "Vous avez suivi un enseignement général ou franco-arabe?"]
+  },
+
+   {"tag": "premierchoix_information",
+  "patterns": ["je veux avoir une information", "je veux des renseignements sur une formation", "renseignements",
+              "informations", "je souhaite m'informer", "je souhaite me renseigner", "informe moi", 
+              "donne moi des informations", "donne moi des renseignements"],
+  "responses": ["Quelle information désirez-vous avoir?", "Que voulez-vous savoir?", "Quel renseignement voulez-vous avoir?"]
+  },
+
+   {"tag": "premierchoix_reconversion",
+  "patterns": ["je souhaite me reconvertir","me reconvertir","je n'aime plus mon actuel boulot",
+              "je souhaite changer de carrière professionnelle", "je suis intéressé par un autre domaine",
+              "reconversion"],
+  "responses": ["Bien noté, vers quel domaine souhaitez-vous vous réorienter?", "Quel domaine vous intéresse à présent?",
+                "Ok, quel domaine vous fait maintenant rêver?", "Ok, dites-moi le domaine que vous visez à présent"]
+  },
+
+  {"tag": "type_denseignement_general",
+  "patterns": ["j'ai suivi l'enseignement général","général", "enseignement général", "parcours général", "Général",
+              "l'enseignement général","le cycle général","géné"],
+  "responses": ["Bien noté, quel type de bac avez-vous? L? S? G? F? T?", "Ok, quel est votre bac? L? S? G? F? T?"]
+  },
+
+  {"tag": "type_denseignement_francoarabe",
+  "patterns": ["j'ai suivi l'enseignement franco arabe","franco arabe", "enseignement franco arabe", "parcours franco arabe", "Général",
+              "l'enseignement franco arabe","le cycle franco arabe","franco-arabe"],
+  "responses": ["Bien noté, quel type de bac avez-vous? S? LAR?", "Ok, quel est votre bac? S? LAR?"]
+  },
+
+  {"tag": "aurevoir",
+  "patterns": ["au revoir","à plus tard","bye","Je m'en vais","Bonne journée","ciao","à plus"],
+  "responses": ["Triste de vous voir partir :(","A plus tard","Au revoir"]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["","gvsd","asbhk"],
+    "responses": ["Désolé, je n'ai pas compris", "Essayez d'être plus précis svp", "Vous dites?"]
+  },
+
+  {"tag": "merci",
+    "patterns": ["Merci", "Ok merci", "Super merci", "Merci pour ton aide"],
+    "responses": ["Tout le plaisir est pour moi!", "De rien :)!", "Je vous en prie!"]
+  }
+]}

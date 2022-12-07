@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  rasa:
-    image: rasa
+  prototypeeducatabgsaiteam:
+    image: prototypeeducatabgsaiteam
     build:
       context: .
       dockerfile: ./Dockerfile
